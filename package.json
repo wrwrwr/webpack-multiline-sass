@@ -1,0 +1,58 @@
+{
+    "name": "webpack-multiline-sass",
+    "version": "0.0.1",
+    "description": "A webpack loader that lets you break lines in .sass.",
+    "author": "Wojtek Ruszczewski <webpack@wr.waw.pl>",
+    "keywords": [
+        "webpack",
+        "loader",
+        "sass"
+    ],
+    "scripts": {
+        "build": "babel main.js -o dist/main.js && cp grammar.pegjs dist",
+        "test": "eslint . && mocha --opts tests/mocha.opts",
+        "prepublish": "npm run build && npm test"
+    },
+    "files": [
+        "LICENSE.txt",
+        "README.md",
+        "dist/"
+    ],
+    "main": "dist/main.js",
+    "dependencies": {
+        "loader-utils": "^1.1.0",
+        "pegjs": "^0.10.0",
+        "schema-utils": "^0.4.5"
+    },
+    "peerDependencies": {
+        "webpack": "^4.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "latest",
+        "@babel/plugin-proposal-class-properties": "latest",
+        "@babel/plugin-proposal-decorators": "latest",
+        "@babel/plugin-proposal-export-default-from": "latest",
+        "@babel/plugin-proposal-nullish-coalescing-operator": "latest",
+        "@babel/plugin-proposal-optional-chaining": "latest",
+        "@babel/plugin-transform-regenerator": "latest",
+        "@babel/preset-env": "latest",
+        "@babel/preset-stage-3": "latest",
+        "@babel/register": "latest",
+        "chai": "latest",
+        "dirty-chai": "latest",
+        "eslint": "latest",
+        "eslint-plugin-sort-class-members": "latest",
+        "memory-fs": "latest",
+        "mocha": "latest",
+        "raw-loader": "latest",
+        "regenerator-runtime": "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wrwrwr/webpack-multiline-sass"
+    },
+    "bugs": {
+        "url": "https://github.com/wrwrwr/webpack-multiline-sass/issues"
+    },
+    "license": "MIT"
+}

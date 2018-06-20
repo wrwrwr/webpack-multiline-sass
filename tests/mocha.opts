@@ -1,0 +1,4 @@
+ --require @babel/register
+ --require tests/mocha.js
+ --ui tdd
+tests/**.js
