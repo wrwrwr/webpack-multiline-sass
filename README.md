@@ -96,7 +96,7 @@ $map: (key1: value1, key2: value2)
 
 ## bslash
 
-For all other cases you may use a trailing bslash:
+For all other cases you may use a trailing backslash:
 
 ```sass
 $sum: $a + \
